@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <style type="text/css">
+    #box {
+        width: 400px;
+        height: 400px;
+        border: .25px solid black;
+        align-content: : center;
+
+        /*background-color: rgb(200, 200, 399);*/
+    }
+    </style>
+</head>
+
+<body>
+    <div id="box"></div>
+    <script type="text/javascript">
+    let square = document.getElementById('box');
+
+
+    square.addEventListener("click", function() {
+        let red = Math.round(Math.random() * 255);
+        let green = Math.round(Math.random() * 255);
+        let blue = Math.round(Math.random() * 255);
+
+        console.log(red, green, blue);
+
+        // square.style.backgroundColor = "rgb(100, 100, 100)";
+
+        square.style.backgroundColor = "rgb(" + red + "," +
+            green + "," + blue + ")";
+
+        })
+    </script>
+</body>
+
+</html>

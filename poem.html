@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+
+	<style type="text/css">
+
+	 td {
+        text-align: center;
+        transition: 2s;
+    }
+
+    td:hover {
+
+        background-color: gray;
+        transition: 2s;
+    }
+
+    #sentence2{
+        text-align: center;
+        font-size: 30px;
+        font-color: grey;
+
+    }
+    #menu {
+        width: 100%;
+        background-color: lightyellow ;
+        border: 1px lightblue;
+
+    }
+
+    .box{
+    	background-color:lightgreen;
+    	height:10px;
+    }
+		
+		p{
+			font-family:times new roman;
+			font-size:50px;
+		}
+			#background{
+				background-color: #9bb9e8   
+			}
+		#blank{
+			font-family:cursive;
+			font-size:50px;
+			border:1px dotted black;
+			width:600px;
+			height:200px;
+			color:pink;
+		}
+	</style>
+</head>
+
+<table id="menu">
+        <tr>
+            <td><a href="index.html"><div>home</div></td></a>
+            <td><a href="about.html"><div>about</div></td></a>
+            <td><a href="projects.html"><div>projects</div></td></a>
+            <td><a href="journal.html"><div>journal</div></td></a>
+
+        </tr>
+	
+    </table>
+
+<body id="background">
+
+
+<p>To a very special person... <br>
+<p>Roses are red, <br>
+
+violets are blue,
+<br>
+Happy Thanksgiving and <br>
+I wish I could...</p>
+
+
+<div id="blank"></div>
+ <p>with you!!!
+</p>
+
+<script type="text/javascript">
+	
+	var array = [
+	"be",
+	"eat mashed potatos",
+	"read",
+	"give a giant, unmasked, indoor hug",
+	"watch a movie",
+	"dance around",
+	"make a pillow fort"
+
+	]
+
+	var box = document.getElementById("blank");
+	box.addEventListener("click",
+function() {
+var x = Math.round(Math.random()*6)
+	box.innerText = array[x];
+
+}
+		);
+
+
+</script>
+
+
+</body>
+</html>
